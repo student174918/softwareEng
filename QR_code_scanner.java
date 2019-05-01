@@ -49,7 +49,7 @@ public class QR_code_scanner {
             hintMap.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.L);
             System.out.println("Data read from QR Code: " + readQRCode(filePath, charset, hintMap));
         } catch (Exception e) {
-            // TODO: handle exception
+        	System.out.println("Caught Error; Could not read QR code  ");
         }
 	}
 
